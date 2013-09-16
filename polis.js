@@ -15,8 +15,14 @@ function handler (req, res) {
     });
 
     req.on('end', function() {
-      console.log('Received body data:');
+      console.log('Logging POST request:');
+
+      console.log('Headers:');
+      console.log(req.headers);
+
+      console.log('Body:');
       console.log(data.toString());
+      console.log();
     });
   }
 
@@ -25,5 +31,6 @@ function handler (req, res) {
   res.end();
 }
 
-console.log("Listening to port 9000");
-console.log("Returning status code " + statusCode.toString());
+console.log("Listening to port " + listeningPort);
+console.log("Returning status code " + statusCode);
+console.log();
