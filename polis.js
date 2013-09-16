@@ -1,8 +1,10 @@
 var app = require('http').createServer(handler);
+var listeningPort = 9000;
 var statusCode = 200;
 var sleep = require('sleep');
+var secondsToSleep = 0;
 
-app.listen(9000);
+app.listen(listeningPort);
 
 function handler (req, res) {
   var data = '';
@@ -19,6 +21,7 @@ function handler (req, res) {
   }
 
   res.writeHead(statusCode, {'Content-Type': 'text/plain'});
+  sleep.sleep(secondsToSleep);
   res.end();
 }
 
