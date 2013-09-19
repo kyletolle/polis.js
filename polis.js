@@ -1,5 +1,5 @@
 var app = require('http').createServer(handler);
-var listeningPort = 9000;
+var listeningPort = process.env.PORT || 9000;
 var statusCode = 200;
 var sleep = require('sleep');
 var secondsToSleep = 0;
