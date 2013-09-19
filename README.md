@@ -17,6 +17,8 @@ Deploy to Heroku using the following steps:
 - `heroku create`
 - `git push heroku master`
 
+For more help check out [how to get started with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) on Heroku.
+
 ### Usage
 
 Once the server is running, you can use cURL to test it out.
