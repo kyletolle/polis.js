@@ -10,20 +10,20 @@ Production
 
 Deploy to Heroku using the following steps:
 
-- Clone this repo. `git clone https://github.com/kyletolle/polis.js.git`
+- Clone this repo
 - `cd polis.js`
 - [Install the Heroku Toolbelt](https://toolbelt.heroku.com/)
-- heroku login
-- heroku create
-- git push heroku master
+- `heroku login`
+- `heroku create`
+- `git push heroku master`
 
 ### Usage
 
 Once the server is running, you can use cURL to test it out.
 
-`curl -d 'Hello, World!' <url*>`
+`curl -d 'Hello, World!' <url>`
 
-* Get the url from the `heroku create` call above, or from `heroku open`
+(Get the url from the `heroku create` call above, or from `heroku open`.)
 
 You can check the logging works properly with `heroku logs`. You'll see
 something like:
