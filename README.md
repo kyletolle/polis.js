@@ -21,7 +21,7 @@ Deploy to Heroku using the following steps:
 
 Once the server is running, you can use cURL to test it out.
 
-`curl -d 'Hello, World!' <url>`
+`curl -d 'Hello, World' <url>`
 
 (Get the url from the `heroku create` call above, or from `heroku open`.)
 
@@ -42,7 +42,7 @@ something like:
 2013-09-19T19:39:52.998926+00:00 app[web.1]:   accept: '*/*' }
 2013-09-19T19:39:52.998926+00:00 app[web.1]:   'x-forwarded-port': '443',
 2013-09-19T19:39:52.999561+00:00 app[web.1]: Body:
-2013-09-19T19:39:52.999602+00:00 app[web.1]: Hello, World!
+2013-09-19T19:39:52.999602+00:00 app[web.1]: Hello, World
 2013-09-19T19:39:52.999716+00:00 app[web.1]:
 ```
 
@@ -70,7 +70,7 @@ Returning status code 200
 
 Once the server is running, you can use cURL to test it out.
 
-`curl -d 'Hello, World!' localhost:9000`
+`curl -d 'Hello, World' localhost:9000`
 
 This will result in the following output:
 
