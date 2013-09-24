@@ -103,6 +103,13 @@ Other wise, it will listen on port 9000.  To change the port the server will
 listen to: `PORT=<your port number>` To change the default port, modify
 `listeningPort` in the code.
 
+If you're like me, you'll likely be running another web app, which will be
+listening on $PORT. So when you try to start polis.js, you'll get an error.
+You can start it up with a custom port from the command line quite easily,
+though.
+
+`PORT=9000 node polis.js`
+
 ### Status Code
 
 The server currently returns a `200` HTTP status code by default. To make the
