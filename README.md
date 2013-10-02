@@ -6,7 +6,7 @@ Simple Node.js HTTP listener that logs POST contents to STDOUT.
 Production
 ----------
 
-### Running 
+### Running
 
 Deploy to Heroku using the following steps:
 
