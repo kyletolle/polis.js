@@ -101,7 +101,7 @@ Configuration
 If the environment variable $PORT is set, the server will listen on that port.
 Other wise, it will listen on port 9000.  To change the port the server will
 listen to: `PORT=<your port number>` To change the default port, modify
-`listeningPort` in the code.
+`LISTENING_PORT` in the code.
 
 If you're like me, you'll likely be running another web app, which will be
 listening on $PORT. So when you try to start polis.js, you'll get an error.
@@ -113,11 +113,11 @@ though.
 ### Status Code
 
 The server currently returns a `200` HTTP status code by default. To make the
-server return another status code, simply change `statusCode` in the code.
+server return another status code, simply change `STATUS_CODE` in the code.
 
 ### Timeout
 
 The server currently does not wait before responding. To make the server sleep
-before it gives a response, change `secondsToSleep` in the code.  This can be
+before it gives a response, change `SECONDS_TO_SLEEP` in the code.  This can be
 useful if testing that the calling code times out after so many seconds.
 
