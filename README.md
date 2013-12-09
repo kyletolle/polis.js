@@ -6,7 +6,7 @@ Simple Node.js HTTP listener that logs POST contents to STDOUT.
 Production
 ----------
 
-### Running
+### Deploy
 
 Deploy to Heroku using the following steps:
 
@@ -21,11 +21,19 @@ For more help check out [how to get started with Node.js](https://devcenter.hero
 
 ### Usage
 
-Once the server is running, you can use cURL to test it out.
+Once the server is running, make sure you can visit it with a browser:
 
-`curl -d 'Hello, World' <url>`
+```
+heroku open
+```
 
-(Get the url from the `heroku create` call above, or from `heroku open`.)
+Next, you can use cURL to test it out.
+
+```
+curl -d 'Hello, World' <url>
+```
+
+NOTE: Get the url from the `heroku create` call above or by running `heroku domains`.
 
 You can check the logging works properly with `heroku logs`. You'll see
 something like:
