@@ -44,7 +44,7 @@ function GetHandler() { }
 GetHandler.prototype.handle = function(req, res) {
   res.writeHead(STATUS_CODE, {'Content-Type': 'text/html'});
 
-  res.write("<html><head><title>Polis.js</title></head><body><h2>Polis.js</h2><p>Running!</p></body></html>");
+  res.write("<html><head><title>Polis.js</title></head><body><h2>polis.js</h2><p>Up and Running!</p></body></html>");
 
   req.on('end', function() {
     console.log('Logging GET request:');
