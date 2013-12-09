@@ -53,6 +53,8 @@ Development
 
 ### Requirements
 
+- [Homebrew](http://brew.sh/)
+- [npm](https://npmjs.org/)
 - Node.js (0.10.17) - `brew install node`
 - Sleep   (1.1.1)   - `npm install sleep`
 
